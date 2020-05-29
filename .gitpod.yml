@@ -4,5 +4,5 @@ image:
 tasks:
   - before: curl -fsSL https://get.docker.com/rootless | sh
     command: /home/gitpod/bin/dockerd-rootless.sh --experimental --iptables=false --storage-driver vfs
-  - command: echo "Try 'docker' here when the daemon is up"
+  - command: clear && echo "Try 'docker' here when the daemon is up"
     openMode: split-right
